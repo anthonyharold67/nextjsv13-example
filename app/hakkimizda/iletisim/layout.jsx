@@ -1,22 +1,22 @@
-import './globals.css'
+import React from 'react'
 
-export default function RootLayout({ children }) {
+const layout = ({children}) => {
   return (
-    <html lang="en">
+    <>
       {/*
         <head /> will contain the components returned by the nearest parent
         head.jsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>
         <nav>
-          Navbar
+          Hakkımızda Navbar
         </nav>
         {children}
         <footer>
-          Footer
+        Hakkımızda Footer
         </footer>
-        </body>
-    </html>
+        </>
   )
 }
+
+export default layout
